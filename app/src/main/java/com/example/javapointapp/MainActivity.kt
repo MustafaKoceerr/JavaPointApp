@@ -1,24 +1,14 @@
 package com.example.javapointapp
 
 import android.content.Intent
-import android.net.Uri
-import android.os.Bundle
-import android.text.Editable
-import android.text.TextWatcher
-import android.view.Gravity
-import android.view.View
-import android.view.ViewGroup
-import android.widget.Button
-import android.widget.EditText
-import android.widget.LinearLayout
-import android.widget.TextView
-import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.constraintlayout.widget.ConstraintLayout
+import android.os.Bundle
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.javapointapp.ListView.MainActivity3
 import com.example.javapointapp.databinding.ActivityMainBinding
+import com.example.javapointapp.implicitintent.MainActivity2
 
 
 private lateinit var binding: ActivityMainBinding
@@ -59,7 +49,10 @@ class MainActivity : AppCompatActivity() {// on create the end
 
 
 
-
+    // acildiginda direkt o sinifa gitsin, manifestten her ornek icin
+    // baslangic activity'sini degistirmek yerine boyle bir cozum buldum
+    intent = Intent(this@MainActivity, MainActivity3::class.java)
+    startActivity(intent)
 
 }// on create fonksiyonu
 
